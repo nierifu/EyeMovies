@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/titlebar_back_container_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp24">
+
+        <ImageView
+            android:id="@+id/titlebar_back_arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back_arraw"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/titlebar_center_container_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/titlebar_right_container_ll"
+        android:layout_toRightOf="@id/titlebar_back_container_ll"/>
+
+    <TextView
+        android:id="@+id/titlevar_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="这是标题"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp20"/>
+
+    <LinearLayout
+        android:id="@+id/titlebar_right_container_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingRight="@dimen/dp10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tilebar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16"/>
+    </LinearLayout>
+</RelativeLayout>

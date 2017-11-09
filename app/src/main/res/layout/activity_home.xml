@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.administrator.eyepetizer.ui.activity.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        app:layout_constraintBottom_toTopOf="@id/bottom"
+        android:background="@color/lightslategrey"/>
+    <RadioGroup
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/frag_feed"
+            style="@style/home_bottom_bar"
+            android:drawableTop="@drawable/selector_home_bottom_feed"
+            android:drawablePadding="@dimen/dp2"
+            android:text="首页"
+            android:textSize="@dimen/sp11" />
+
+        <RadioButton
+            android:id="@+id/frag_follow"
+            style="@style/home_bottom_bar"
+            android:drawableTop="@drawable/selector_home_bottom_follow"
+            android:text="关注"
+            android:drawablePadding="@dimen/dp2"
+            android:textSize="@dimen/sp11" />
+
+        <RadioButton
+            android:id="@+id/frag_category"
+            style="@style/home_bottom_bar"
+            android:drawableTop="@drawable/selector_home_bottom_category"
+            android:text="通知"
+            android:drawablePadding="@dimen/dp2"
+            android:textSize="@dimen/sp11" />
+
+        <RadioButton
+            android:id="@+id/frag_profile"
+            style="@style/home_bottom_bar"
+            android:drawableTop="@drawable/selector_home_bottom_profile"
+            android:text="我的"
+            android:drawablePadding="@dimen/dp2"
+            android:textSize="@dimen/sp11" />
+
+    </RadioGroup>
+
+
+
+</android.support.constraint.ConstraintLayout>
