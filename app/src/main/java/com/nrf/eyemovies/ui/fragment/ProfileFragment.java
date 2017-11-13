@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.ui.fragment;
+package com.nrf.eyemovies.ui.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.administrator.eyepetizer.R;
-import com.example.administrator.eyepetizer.ui.BaseFragment;
+import com.nrf.eyemovies.R;
+import com.nrf.eyemovies.ui.BaseFragment;
 
 /**
  * Created by Administrator on 2017/11/9.

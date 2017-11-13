@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.http;
+package com.nrf.eyemovies.http;
 
 import android.util.Log;
 

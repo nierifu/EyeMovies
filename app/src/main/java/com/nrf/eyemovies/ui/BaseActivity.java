@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.ui;
+package com.nrf.eyemovies.ui;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.example.administrator.eyepetizer.utils.ToastUtils;
+import com.nrf.eyemovies.utils.ToastUtils;
 
 import java.util.LinkedList;
 

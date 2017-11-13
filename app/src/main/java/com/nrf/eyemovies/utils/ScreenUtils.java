@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.utils;
+package com.nrf.eyemovies.utils;
 
 import android.app.Activity;
 import android.content.Context;

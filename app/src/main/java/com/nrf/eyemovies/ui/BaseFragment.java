@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.ui;
+package com.nrf.eyemovies.ui;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.administrator.eyepetizer.R;
-import com.example.administrator.eyepetizer.utils.LOG;
+import com.nrf.eyemovies.R;
+import com.nrf.eyemovies.utils.LOG;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

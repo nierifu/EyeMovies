@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.ui.view;
+package com.nrf.eyemovies.ui.view;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,9 +16,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.administrator.eyepetizer.R;
-import com.example.administrator.eyepetizer.utils.DensityUtils;
-import com.example.administrator.eyepetizer.utils.ScreenUtils;
+import com.nrf.eyemovies.R;
+import com.nrf.eyemovies.utils.DensityUtils;
+import com.nrf.eyemovies.utils.ScreenUtils;
 
 
 /**

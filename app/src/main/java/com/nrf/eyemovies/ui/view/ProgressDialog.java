@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.ui.view;
+package com.nrf.eyemovies.ui.view;
 
 import android.content.Context;
 import android.content.DialogInterface;

@@ -1,16 +1,16 @@
-package com.example.administrator.eyepetizer.ui.activity;
+package com.nrf.eyemovies.ui.activity;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.example.administrator.eyepetizer.R;
-import com.example.administrator.eyepetizer.ui.BaseActivity;
-import com.example.administrator.eyepetizer.ui.fragment.CategoryFragment;
-import com.example.administrator.eyepetizer.ui.fragment.FeedFragment;
-import com.example.administrator.eyepetizer.ui.fragment.FollowFragment;
-import com.example.administrator.eyepetizer.ui.fragment.ProfileFragment;
+import com.nrf.eyemovies.R;
+import com.nrf.eyemovies.ui.BaseActivity;
+import com.nrf.eyemovies.ui.fragment.CategoryFragment;
+import com.nrf.eyemovies.ui.fragment.FeedFragment;
+import com.nrf.eyemovies.ui.fragment.FollowFragment;
+import com.nrf.eyemovies.ui.fragment.ProfileFragment;
 
 import butterknife.BindView;
 

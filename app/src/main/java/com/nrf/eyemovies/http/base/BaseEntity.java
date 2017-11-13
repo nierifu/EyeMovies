@@ -1,4 +1,4 @@
-package com.example.administrator.eyepetizer.http.base;
+package com.nrf.eyemovies.http.base;
 
 /**
  * Created by Administrator on 2017/11/9.

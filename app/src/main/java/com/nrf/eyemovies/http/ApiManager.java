@@ -1,6 +1,6 @@
-package com.example.administrator.eyepetizer.http;
+package com.nrf.eyemovies.http;
 
-import com.example.administrator.eyepetizer.http.config.HttpConfig;
+import com.nrf.eyemovies.http.config.HttpConfig;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,9 +1,9 @@
-package com.example.administrator.eyepetizer.http.base;
+package com.nrf.eyemovies.http.base;
 
 import android.accounts.NetworkErrorException;
 import android.content.Context;
 
-import com.example.administrator.eyepetizer.ui.view.ProgressDialog;
+import com.nrf.eyemovies.ui.view.ProgressDialog;
 
 import java.net.ConnectException;
 import java.net.UnknownHostException;
