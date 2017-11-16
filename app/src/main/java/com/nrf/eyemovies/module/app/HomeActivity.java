@@ -1,4 +1,4 @@
-package com.nrf.eyemovies.module;
+package com.nrf.eyemovies.module.app;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
