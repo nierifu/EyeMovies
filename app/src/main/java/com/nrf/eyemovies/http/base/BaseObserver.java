@@ -3,7 +3,7 @@ package com.nrf.eyemovies.http.base;
 import android.accounts.NetworkErrorException;
 import android.content.Context;
 
-import com.nrf.eyemovies.ui.view.ProgressDialog;
+import com.nrf.eyemovies.view.ProgressDialog;
 
 import java.net.ConnectException;
 import java.net.UnknownHostException;

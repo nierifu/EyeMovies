@@ -1,4 +1,4 @@
-package com.nrf.eyemovies.ui.activity;
+package com.nrf.eyemovies.module;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -6,11 +6,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.nrf.eyemovies.R;
-import com.nrf.eyemovies.ui.BaseActivity;
-import com.nrf.eyemovies.ui.fragment.CategoryFragment;
-import com.nrf.eyemovies.ui.fragment.FeedFragment;
-import com.nrf.eyemovies.ui.fragment.FollowFragment;
-import com.nrf.eyemovies.ui.fragment.ProfileFragment;
+import com.nrf.eyemovies.module.base.BaseActivity;
+import com.nrf.eyemovies.module.category.fragment.CategoryFragment;
+import com.nrf.eyemovies.module.feed.fragment.FeedFragment;
+import com.nrf.eyemovies.module.follow.fragment.FollowFragment;
+import com.nrf.eyemovies.module.profile.fragment.ProfileFragment;
 
 import butterknife.BindView;
 
@@ -67,7 +67,6 @@ public class HomeActivity extends BaseActivity {
                     case R.id.frag_profile:
                         switchFragment(mProfileFragment).commit();
                         break;
-
                     default:
                         break;
                 }

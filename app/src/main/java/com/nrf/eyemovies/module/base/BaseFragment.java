@@ -1,4 +1,4 @@
-package com.nrf.eyemovies.ui;
+package com.nrf.eyemovies.module.base;
 
 import android.content.Context;
 import android.os.Bundle;

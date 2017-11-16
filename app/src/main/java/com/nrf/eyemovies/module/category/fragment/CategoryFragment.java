@@ -1,4 +1,4 @@
-package com.nrf.eyemovies.ui.fragment;
+package com.nrf.eyemovies.module.category.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -7,16 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.nrf.eyemovies.R;
-import com.nrf.eyemovies.ui.BaseFragment;
+import com.nrf.eyemovies.module.base.BaseFragment;
 
 /**
  * Created by Administrator on 2017/11/9.
  */
 
-public class FollowFragment extends BaseFragment {
+public class CategoryFragment extends BaseFragment {
     @Override
     protected View getLayoutInflateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = LayoutInflater.from(context).inflate(R.layout.fragment_follow,null);
+        View view = LayoutInflater.from(context).inflate(R.layout.fragment_category,null);
         return view;
     }
 
@@ -34,9 +34,10 @@ public class FollowFragment extends BaseFragment {
     protected void bindListener() {
 
     }
+
     @Override
     public void onHiddenChanged(boolean hidden) {
         super.onHiddenChanged(hidden);
-        Log.e("FollowFragment", "onHiddenChanged: hidden---" + hidden);
+        Log.e("CategoryFragment",  "onHiddenChanged: hidden---" + hidden);
     }
 }

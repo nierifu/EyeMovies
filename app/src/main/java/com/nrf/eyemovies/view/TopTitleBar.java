@@ -1,4 +1,4 @@
-package com.nrf.eyemovies.ui.view;
+package com.nrf.eyemovies.view;
 
 import android.app.Activity;
 import android.content.Context;
