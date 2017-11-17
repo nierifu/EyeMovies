@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.nrf.eyemovies.R;
-import com.nrf.eyemovies.utils.LOG;
+import com.nrf.eyemovies.common.utils.LOG;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -27,7 +27,7 @@ public abstract class BaseFragment extends Fragment {
         tagName = this.getClass().getSimpleName();
         View layoutInflateView = getLayoutInflateView(inflater, container, savedInstanceState);
         mButterBind = ButterKnife.bind(this, layoutInflateView);
-        emptyView = View.inflate(getActivity(), R.layout.layout_no_data_layout, null);
+        emptyView = View.inflate(getActivity(), R.layout.layout_no_data, null);
         initView(layoutInflateView);
         initData();
         bindListener();

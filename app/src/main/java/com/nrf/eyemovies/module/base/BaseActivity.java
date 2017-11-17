@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.nrf.eyemovies.utils.ToastUtils;
+import com.nrf.eyemovies.common.utils.ToastUtils;
 
 import java.util.LinkedList;
 
