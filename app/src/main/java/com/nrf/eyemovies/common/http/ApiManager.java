@@ -17,27 +17,20 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiManager {
     private ApiService apiService;
     private static ApiManager apiManager;
+    private static OkHttpClient sOKHttpClient;
 
-    public synchronized static ApiManager getInstance(){
+    public synchronized static ApiManager getInstance() {
         if (apiManager == null) {
             apiManager = new ApiManager();
         }
         return apiManager;
     }
 
-    public ApiService getApiService(){
-        if(apiService == null){
-            OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                    .connectTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)//设计网络超时时间
-                    .readTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)
-                    .writeTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)
-                    .addInterceptor(InterceptorUtil.HeaderInterceptor())
-                    .addInterceptor(InterceptorUtil.LogInterceptor())//添加日志拦截器
-                    .build();
-
+    public ApiService getApiService() {
+        if (apiService == null) {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(HttpConfig.baseUrl)
-                    .client(okHttpClient)
+                    .client(getsOKHttpClient())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())//Rxjava retrofit结合起来
                     .addConverterFactory(GsonConverterFactory.create())       //添加gson解析库
                     .build();
@@ -46,6 +39,25 @@ public class ApiManager {
         }
 
         return apiService;
+    }
+
+    public static OkHttpClient getsOKHttpClient() {
+        if (sOKHttpClient == null) {
+            synchronized (ApiManager.class) {
+
+                if (sOKHttpClient == null) {
+                    sOKHttpClient = new OkHttpClient.Builder()
+                            .connectTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)//设计网络超时时间
+                            .readTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)
+                            .writeTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)
+                            .addInterceptor(InterceptorUtil.HeaderInterceptor())
+                            .addInterceptor(InterceptorUtil.LogInterceptor())//添加日志拦截器
+                            .build();
+                }
+            }
+        }
+
+        return sOKHttpClient;
     }
 
     /**
